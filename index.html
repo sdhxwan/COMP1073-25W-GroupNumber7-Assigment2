@@ -6,4 +6,38 @@
         <title>Order Your Smoothie</title>
         <link rel="stylesheet" href="./css/style.css">
     </head>
+    <body>
+        <div class="container">
+            <h1>Build Your Smoothie</h1>
+            <form id="smoothieForm">
+                <label for="size">Choose Size:</label>
+                <select id="size">
+                    <option value="small">Small ($4.00)</option>
+                    <option value="medium">Medium ($5.50)</option>
+                    <option value="large">Large ($7.00)</option>
+                </select>
+    
+                <label>Pick Ingredients ($1.00 each):</label>
+                <input type="checkbox" name="ingredients" value="banana"> Banana
+                <input type="checkbox" name="ingredients" value="strawberry"> Strawberry
+                <input type="checkbox" name="ingredients" value="mango"> Mango
+                <input type="checkbox" name="ingredients" value="blueberry"> Blueberry
+                <input type="checkbox" name="ingredients" value="spinach"> Spinach
+                <input type="checkbox" name="ingredients" value="protein powder"> Protein Powder (+$1.50)
+                <input type="checkbox" name="ingredients" value="honey"> Honey
+                
+                <label for="base">Choose Base:</label>
+                <select id="base">
+                    <option value="milk">Milk</option>
+                    <option value="almond milk">Almond Milk (+$0.50)</option>
+                    <option value="yogurt">Yogurt (+$0.50)</option>
+                    <option value="coconut water">Coconut Water (+$0.50)</option>
+                </select>
+                
+                <button type="button" id="orderButton">Order Smoothie</button>
+            </form>
+            <div id="orderSummary"></div>
+        </div>
+        <script src="script.js"></script> 
+    </body>
 </html>
