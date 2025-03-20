@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+    <!--masthead-->
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Order Your Smoothie</title>
         <link rel="stylesheet" href="./css/style.css">
     </head>
+    <!--body-->
     <body>
+        <!--all our content-->
         <div class="container">
             <h1>Build Your Smoothie</h1>
+            <!--the form for the user-->
             <form id="smoothieForm">
+                <!--label to choose the size-->
                 <label for="size">Choose Size:</label>
                 <select id="size">
                     <option value="small">Small ($4.00)</option>
                     <option value="medium">Medium ($5.50)</option>
                     <option value="large">Large ($7.00)</option>
                 </select>
-    
+
+                <!--to pick different ingredients with prices-->
                 <label>Pick Ingredients ($1.00 each):</label>
                 <input type="checkbox" name="ingredients" value="banana"> Banana
                 <input type="checkbox" name="ingredients" value="strawberry"> Strawberry
@@ -26,6 +32,7 @@
                 <input type="checkbox" name="ingredients" value="protein powder"> Protein Powder (+$1.50)
                 <input type="checkbox" name="ingredients" value="honey"> Honey
                 
+                <!--select the base of the drink-->
                 <label for="base">Choose Base:</label>
                 <select id="base">
                     <option value="milk">Milk</option>
@@ -34,10 +41,13 @@
                     <option value="coconut water">Coconut Water (+$0.50)</option>
                 </select>
                 
+                <!--the submit order button-->
                 <button type="button" id="orderButton">Order Smoothie</button>
             </form>
+            <!--the summary of what has been ordered-->
             <div id="orderSummary"></div>
         </div>
-        <script src="script.js"></script> 
+        <!--the script for js-->
+        <script src="./js/script.js"></script> 
     </body>
 </html>
