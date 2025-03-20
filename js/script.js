@@ -25,4 +25,9 @@ class Smoothie {
         //return the total price formated to 2 decimal places
         return (sizePrices[this.size] + ingredientPrice + baseExtra).toFixed(2);
     }
+
+    //method to return the description of the order
+    getDescription() {
+        return `You ordered a ${this.size} smoothie with ${this.ingredients.join(", ")} and ${this.base} as the base. Total: $${this.calculatePrice()}`;
+    }
 }
