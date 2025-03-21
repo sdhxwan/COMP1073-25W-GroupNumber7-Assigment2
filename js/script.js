@@ -32,5 +32,8 @@ class Smoothie {
     }
 }
 document.getElementById("orderButton").addEventListener("click", () => {
-    
+    const size = document.getElementById("size").value;
+    const base = document.getElementById("base").value;
+    const ingredients = Array.from(document.querySelectorAll("input[name='ingredients']:checked"))
+        .map(checkbox => checkbox.value);
 });
