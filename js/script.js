@@ -46,6 +46,6 @@ document.getElementById("orderButton").addEventListener("click", () => {
 
     //create smoothie instance with parameters
     const smoothie = new Smoothie(size, ingredients, base);
-    const summary = document.getElementById(orderSummary);
+    const summary = document.getElementById("orderSummary");
     summary.textContent = smoothie.getDescription();
 });
