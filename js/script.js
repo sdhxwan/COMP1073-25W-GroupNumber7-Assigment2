@@ -36,4 +36,9 @@ document.getElementById("orderButton").addEventListener("click", () => {
     const base = document.getElementById("base").value;
     const ingredients = Array.from(document.querySelectorAll("input[name='ingredients']:checked"))
         .map(checkbox => checkbox.value);
+
+    if (ingredients.length === 0) {
+        alert("Please select at least one ingredient.");
+        return;
+    }
 });
