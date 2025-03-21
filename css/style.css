@@ -16,6 +16,15 @@ body{
 h1{
     color:#d35400;
 }
+.size{
+    margin: 10px 0 10px 0;
+}
+.ingredients{
+    margin: 10px 0 10px 0;
+}
+.base{
+    margin: 10px 0 10px 0;
+}
 button{
     background-color: #d35400;
     color: white;
