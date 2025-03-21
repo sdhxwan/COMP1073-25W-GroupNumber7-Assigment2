@@ -9,8 +9,8 @@ body{
     background: white;
     padding: 20px;
     border-radius: 10px;
-    display: inline-block;
-    text-align: left;
+    display: flex;
+    flex-direction: column;
 }
 h1{
     color:#d35400;
