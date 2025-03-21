@@ -11,6 +11,7 @@ body{
     border-radius: 10px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 h1{
     color:#d35400;
@@ -25,6 +26,7 @@ button{
     font-size: 16px;
     border-radius: 10px;
     transition: all 0.5s ease-in-out;
+    width: 200px;
 }
 button:hover{
     background-color: white;
