@@ -43,4 +43,7 @@ document.getElementById("orderButton").addEventListener("click", () => {
         alert("Please select at least one ingredient.");
         return;
     }
+
+    //create smoothie instance with parameters
+    const smoothie = new Smoothie(size, ingredients, base);
 });
