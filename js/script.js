@@ -31,3 +31,6 @@ class Smoothie {
         return `You ordered a ${this.size} smoothie with ${this.ingredients.join(", ")} and ${this.base} as the base. Total: $${this.calculatePrice()}`;
     }
 }
+document.getElementById("orderButton").addEventListener("click", () => {
+    
+});
